@@ -1,0 +1,97 @@
+/* Container */
+.container {
+ 
+    padding: 1rem;
+    width: 100vw;
+    height: 100vh;
+
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn1{
+    background-color: #0284c7;
+    color: white;
+    width:70px ;
+     border: 1px solid   #0284c7;
+     border-radius: 10px;
+    
+  }
+  .btn2{
+    background-color: #0284c7;
+    color: white;
+    width:70px ;
+     border: 1px solid   #0284c7;
+     border-radius: 10px;
+  }
+  
+  .header h1 {
+    font-size: 1.875rem; /* text-3xl */
+    margin-top: 2rem; /* my-8 */
+    margin-bottom: 2rem;
+  }
+  
+  .header .add-book-btn {
+    color: #0284c7; /* text-sky-800 */
+    font-size: 2rem; /* text-4xl */
+  }
+  
+  /* Table */
+  .table {
+    width: 100%;
+    border-spacing: 0.5rem; 
+    border-collapse: separate;
+    /* border-separate border-spacing-2 */
+  }
+  
+  .table th, .table td {
+    border: 1px solid #4b5563; /* border-slate-600 */
+    border-radius: 0.375rem; /* rounded-md */
+    text-align: center;
+   
+  }
+  
+  /* Table Content */
+  .table th {
+    padding: 0.5rem;
+  }
+  
+  .table td {
+    padding: 0.5rem;
+  }
+  
+  /* Operations column */
+  .table .operations {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* gap-x-4 */
+  }
+  
+  /* Icons */
+  .icon {
+    font-size: 1.5rem; /* text-2xl */
+  }
+  
+  .icon.green {
+    color: #16a34a; /* text-green-800 */
+  }
+  
+  .icon.red {
+    color: #ef4444; /* text-red-600 */
+  }
+  
+  /* Responsive (Hide Author and PublishYear on small screens) */
+  @media (max-width: 768px) {
+    .table td.max-md {
+      display: none;
+    }
+  }
